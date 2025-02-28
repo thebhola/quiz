@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Authors List</title>
+</head>
+<body>
+    <h1>Authors</h1>
+    <ul id="authors-list"></ul>
+
+    <script>
+        // Fetch authors from the JSON file
+        fetch("/assets/data/authorData.json")
+            .then(response => response.json())
+            .then(data => {
+                const authorsList = document.getElementById("authors-list");
+
+                data.authors.forEach(author => {
+                    const li = document.createElement("li");
+                    const a = document.createElement("a");
+
+                    // Create a dynamic link to `dynamic.html`
+                    a.href = `dynamic.html?name=${encodeURIComponent(author.name)}`;
+                    a.textContent = author.name;  
+                    a.target = "_blank"; // Open in a new tab (optional)
+
+                    li.appendChild(a);
+                    authorsList.appendChild(li);
+                });
+            })
+            .catch(error => console.error("Error loading authors:", error));
+    </script>
+</body>
+</html>

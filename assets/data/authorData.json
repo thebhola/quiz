@@ -1,0 +1,105 @@
+{
+    "authors": [
+      {
+        "name": "William Shakespeare",
+        "bio": "English playwright, poet, and actor, widely regarded as the greatest writer in the English language.",
+        "quiz": [
+          {
+            "question": "Which of these is a play written by Shakespeare?",
+            "options": ["Hamlet", "War and Peace", "The Great Gatsby", "Moby Dick"],
+            "correct": "Hamlet"
+          },
+          {
+            "question": "In which century did Shakespeare live?",
+            "options": ["16th", "17th", "18th", "19th"],
+            "correct": "16th"
+          }
+        ]
+      },
+      {
+        "name": "Jane Austen",
+        "bio": "English novelist known for her works on romantic fiction, such as Pride and Prejudice.",
+        "quiz": [
+          {
+            "question": "Which is NOT a novel written by Jane Austen?",
+            "options": ["Pride and Prejudice", "Emma", "1984", "Sense and Sensibility"],
+            "correct": "1984"
+          },
+          {
+            "question": "What was Jane Austen's main genre?",
+            "options": ["Science Fiction", "Romance", "Mystery", "Horror"],
+            "correct": "Romance"
+          }
+        ]
+      },
+      {
+        "name": "Mark Twain",
+        "bio": "American writer, humorist, and lecturer, best known for The Adventures of Tom Sawyer and Adventures of Huckleberry Finn.",
+        "quiz": [
+          {
+            "question": "What is Mark Twain's real name?",
+            "options": ["Samuel Clemens", "Charles Dickens", "Ernest Hemingway", "F. Scott Fitzgerald"],
+            "correct": "Samuel Clemens"
+          },
+          {
+            "question": "Which novel features the character Huckleberry Finn?",
+            "options": ["The Adventures of Tom Sawyer", "Moby Dick", "The Great Gatsby", "Dracula"],
+            "correct": "The Adventures of Tom Sawyer"
+          }
+        ]
+      },
+      {
+        "name": "Charles Dickens",
+        "bio": "English writer and social critic, known for works like A Tale of Two Cities and Oliver Twist.",
+        "quiz": [
+          {
+            "question": "Which book was written by Charles Dickens?",
+            "options": ["A Tale of Two Cities", "The Catcher in the Rye", "Brave New World", "The Old Man and The Sea"],
+            "correct": "A Tale of Two Cities"
+          },
+          {
+            "question": "What is a common theme in Dickens' novels?",
+            "options": ["Futuristic technology", "Social injustice", "Space exploration", "Medieval fantasy"],
+            "correct": "Social injustice"
+          }
+        ]
+      },
+      {
+        "name": "Agatha Christie",
+        "bio": "English writer known for her detective novels featuring Hercule Poirot and Miss Marple.",
+        "quiz": [
+          {
+            "question": "Who is a famous detective created by Agatha Christie?",
+            "options": ["Sherlock Holmes", "Hercule Poirot", "Nancy Drew", "James Bond"],
+            "correct": "Hercule Poirot"
+          },
+          {
+            "question": "Which is NOT a novel by Agatha Christie?",
+            "options": ["Murder on the Orient Express", "And Then There Were None", "To Kill a Mockingbird", "The ABC Murders"],
+            "correct": "To Kill a Mockingbird"
+          }
+        ]
+      },
+      {
+        "name": "George Orwell",
+        "bio": "English novelist and essayist, known for his dystopian works 1984 and Animal Farm.",
+        "quiz": [
+          {
+            "question": "Which book was written by George Orwell?",
+            "options": ["1984", "The Lord of the Rings", "Harry Potter and the Sorcerer's Stone", "The Grapes of Wrath"],
+            "correct": "1984"
+          },
+          {
+            "question": "What is the main theme of Orwell's 1984?",
+            "options": ["Space travel", "Totalitarianism", "Romance", "Comedy"],
+            "correct": "Totalitarianism"
+          },
+          {
+            "question": "What is the main theme of Orwell's 1984?",
+            "options": ["Space travel", "Totalitarianism", "Romance", "Comedy"],
+            "correct": "Totalitarianism"
+          }
+        ]
+      }
+    ]
+  }
