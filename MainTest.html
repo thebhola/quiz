@@ -3,7 +3,7 @@
 <head>
     <meta charset="UTF-8">
     <title>Select an Author</title>
-    <link rel="stylesheet" href="assets/style.css">
+    <!-- <link rel="stylesheet" href="assets/style.css"> -->
     <style>
         body {
             background: linear-gradient(135deg, #74ebd5, #ACB6E5);
@@ -35,18 +35,35 @@
         }
 
         .author-box {
-            background: white;
-            border-radius: 12px;
-            padding: 15px;
-            text-align: center;
-            cursor: pointer;
-            transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+        background: white;
+        border-radius: 7px;
+        padding: 15px;
+        text-align: center;
+        cursor: pointer;
+        transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+        position: relative;
+        overflow: hidden;
+        }
+
+        .author-box::before {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 50%;
+        width: 300%;
+        height: 300%;
+        background: radial-gradient(circle, rgba(0, 0, 0, 0.1) 10%, transparent 70%);
+        opacity: 0;
+        transform: translate(-25%, -25%) scale(0.1);
         }
 
         .author-box:hover {
-            transform: scale(1.05);
-            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
-            background: #f1f1f1; /* Subtle background change */
+        box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25);
+        }
+
+        .author-box:hover::before {
+        opacity: 1;
+        transform: translate(-50%, -50%) scale(1);
         }
 
         .author-box img {
