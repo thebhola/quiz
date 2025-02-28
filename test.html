@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Test File</title>
+    <!-- <link rel="stylesheet" href="assets/test.css"> -->
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="quiz-container">
+        <div class="score-display">Score: <span id="score">0</span></div>
+        <div class="progress-bar">
+            <div class="progress" id="progress"></div>
+        </div>
+        <div class="question" id="question"></div>
+        <div class="options" id="options"></div>
+        <button class="next-btn" id="next-btn">Next Question</button>
+        <div class="result" id="result"></div>
+    </div>
+    <script>
+    let quizData;
+    let currentQuestion = 0;
+    let score = 0;
+    let answered = false;
+
+    const questionEl = document.getElementById('question');
+    const optionsEl = document.getElementById('options');
+    const nextBtn = document.getElementById('next-btn');
+    const scoreEl = document.getElementById('score');
+    const resultEl = document.getElementById('result');
+    const progressEl = document.getElementById('progress');
+
+    async function loadQuizData() {
+        try {
+            const response = await fetch('quiz.json');
+            quizData = await response.json();
+            showQuestion();
+        } catch (error) {
+            console.error("Error loading quiz data:", error);
+        }
+    }
+
+    function showQuestion() {
+        const question = quizData.questions[currentQuestion];
+        questionEl.textContent = question.question;
+
+        optionsEl.innerHTML = '';
+        question.options.forEach((option, index) => {
+            const button = document.createElement('div');
+            button.className = 'option';
+            button.textContent = option;
+            button.onclick = () => selectOption(index);
+            optionsEl.appendChild(button);
+        });
+        console.log("Hello")
+        answered = false;
+        nextBtn.style.display = 'none';
+        updateProgress();
+    }
+
+    function selectOption(index) {
+        if (answered) return;
+
+        const question = quizData.questions[currentQuestion];
+        const options = document.querySelectorAll('.option');
+
+        answered = true;
+        const correct = index === question.correct;
+
+        options[index].classList.add('selected');
+        options[index].classList.add(correct ? 'correct' : 'incorrect');
+
+        if (correct) {
+            score++;
+            scoreEl.textContent = score;
+        }
+
+        options[question.correct].classList.add('correct');
+        nextBtn.style.display = 'block';
+    }
+
+    function updateProgress() {
+        const progress = ((currentQuestion + 1) / quizData.questions.length) * 100;
+        progressEl.style.width = `${progress}%`;
+    }
+
+    nextBtn.onclick = () => {
+        currentQuestion++;
+
+        if (currentQuestion < quizData.questions.length) {
+            showQuestion();
+        } else {
+            questionEl.style.display = 'none';
+            optionsEl.style.display = 'none';
+            nextBtn.style.display = 'none';
+            resultEl.style.display = 'block';
+            resultEl.textContent = `Quiz completed! Final score: ${score}/${quizData.questions.length}`;
+        }
+    };
+
+    // Load the quiz data when the page loads
+    loadQuizData();
+    </script>
+
+</body>
+</html>

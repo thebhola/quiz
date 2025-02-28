@@ -4,6 +4,68 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Authors List</title>
+    <style>
+        /* General styles */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: #f4f4f9;
+            margin: 0;
+            padding: 20px;
+            color: #333;
+        }
+
+        h1 {
+            text-align: center;
+            color: #444;
+        }
+
+        /* Authors list container */
+        #authors-list {
+            list-style: none;
+            padding: 0;
+            display: flex;
+            flex-wrap: wrap;
+            gap: 20px;
+            justify-content: center;
+        }
+
+        /* Author box styles */
+        .author-box {
+            background-color: #4a90e2; /* Single solid color */
+            border-radius: 10px;
+            padding: 20px;
+            width: 180px;
+            height: 220px; /* Increased box height */
+            text-align: center;
+            box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .author-box:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+        }
+
+        .author-box img {
+            width: 100px;
+            height: 100px;
+            border-radius: 50%; /* Circular image */
+            object-fit: cover;
+            margin-bottom: 15px;
+            border: 3px solid white; /* White border around the image */
+        }
+
+        .author-box a {
+            text-decoration: none;
+            color: white;
+            font-size: 18px;
+            font-weight: bold;
+        }
+    </style>
 </head>
 <body>
     <h1>Authors</h1>
@@ -18,13 +80,21 @@
 
                 data.authors.forEach(author => {
                     const li = document.createElement("li");
-                    const a = document.createElement("a");
+                    li.className = "author-box"; // Add class for styling
 
-                    // Create a dynamic link to `dynamic.html`
+                    // Create image element
+                    const img = document.createElement("img");
+                    img.src = author.image; // Assuming `image` is a field in your JSON
+                    img.alt = `${author.name}'s image`;
+
+                    // Create link element
+                    const a = document.createElement("a");
                     a.href = `dynamic.html?name=${encodeURIComponent(author.name)}`;
-                    a.textContent = author.name;  
+                    a.textContent = author.name;
                     a.target = "_blank"; // Open in a new tab (optional)
 
+                    // Append image and link to the box
+                    li.appendChild(img);
                     li.appendChild(a);
                     authorsList.appendChild(li);
                 });

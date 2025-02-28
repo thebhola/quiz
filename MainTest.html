@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Select an Author</title>
+    <link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+    <div class="author-container">
+        <h1>Select an Author</h1>
+        <div class="authors">
+            <button onclick="startQuiz('Homer')">Homer</button>
+            <button onclick="startQuiz('Shakespeare')">Shakespeare</button>
+            <button onclick="startQuiz('Jane_Austen')">Jane Austen</button>
+            <button onclick="startQuiz('T.S_Eliot')">T.S. Eliot</button>
+        </div>
+    </div>
+
+    <script>
+        function startQuiz(author) {
+            window.location.href = `quiz.html?author=${author}`;
+        }
+    </script>
+</body>
+</html>
