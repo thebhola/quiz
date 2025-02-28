@@ -1,0 +1,104 @@
+{
+    "questions": [
+        {
+            "question": "Which of the following works is NOT written by Geoffrey Chaucer?",
+            "options": ["The Canterbury Tales", "Troilus and Criseyde", "Piers Plowman", "The Book of the Duchess"],
+            "correct": 2
+        },
+        {
+            "question": "Who is considered Chaucer’s contemporary and the author of Sir Gawain and the Green Knight?",
+            "options": ["John Gower", "The Pearl Poet", "William Langland", "Thomas Malory"],
+            "correct": 1
+        },
+        {
+            "question": "Which of the following languages did Chaucer primarily write in?",
+            "options": ["Latin", "French", "Middle English", "Old English"],
+            "correct": 2
+        },
+        {
+            "question": "What is the name of the inn where the pilgrims gather in The Canterbury Tales?",
+            "options": ["The Tabard Inn", "The Boar’s Head Tavern", "The White Hart Inn", "The Mermaid Inn"],
+            "correct": 0
+        },
+        {
+            "question": "Which of the following is a major theme in The Canterbury Tales?",
+            "options": ["The fall of Troy", "The corruption of the Church", "The Arthurian legend", "The rise of the Renaissance"],
+            "correct": 1
+        },
+        {
+            "question": "Who is the author of Piers Plowman?",
+            "options": ["Geoffrey Chaucer", "John Gower", "William Langland", "Thomas Hoccleve"],
+            "correct": 2
+        },
+        {
+            "question": "Which of the following works by Chaucer is a dream vision?",
+            "options": ["The Canterbury Tales", "Troilus and Criseyde", "The House of Fame", "The Legend of Good Women"],
+            "correct": 2
+        },
+        {
+            "question": "Which of the following is NOT a character in The Canterbury Tales?",
+            "options": ["The Wife of Bath", "The Pardoner", "The Green Knight", "The Knight"],
+            "correct": 2
+        },
+        {
+            "question": "Who is the author of Confessio Amantis?",
+            "options": ["Geoffrey Chaucer", "John Gower", "William Langland", "Thomas Malory"],
+            "correct": 1
+        },
+        {
+            "question": "Which of the following is a characteristic of Chaucer’s Troilus and Criseyde?",
+            "options": ["It is written in Old English", "It is based on a Greek myth", "It is a tragedy", "It is a religious allegory"],
+            "correct": 2
+        },
+        {
+            "question": "Which of the following poets was NOT a contemporary of Chaucer?",
+            "options": ["John Gower", "William Langland", "Edmund Spenser", "The Pearl Poet"],
+            "correct": 2
+        },
+        {
+            "question": "What is the primary verse form used in The Canterbury Tales?",
+            "options": ["Blank verse", "Rhymed couplets", "Free verse", "Terza rima"],
+            "correct": 1
+        },
+        {
+            "question": "Which of the following works is an allegorical poem?",
+            "options": ["The Canterbury Tales", "Piers Plowman", "Troilus and Criseyde", "The Book of the Duchess"],
+            "correct": 1
+        },
+        {
+            "question": "Who is the narrator of The Canterbury Tales?",
+            "options": ["Geoffrey Chaucer", "The Knight", "The Host", "The Pardoner"],
+            "correct": 0
+        },
+        {
+            "question": "Which of the following is a major influence on Chaucer’s works?",
+            "options": ["The Bible", "Italian Renaissance literature", "French fabliaux", "All of the above"],
+            "correct": 3
+        },
+        {
+            "question": "What is the primary theme of The Book of the Duchess?",
+            "options": ["Courtly love", "Religious devotion", "Political satire", "Chivalric adventure"],
+            "correct": 0
+        },
+        {
+            "question": "Which of the following is a feature of Chaucer’s style?",
+            "options": ["Use of alliteration", "Use of irony and satire", "Use of Latin exclusively", "Use of free verse"],
+            "correct": 1
+        },
+        {
+            "question": "Who is the author of Le Morte d’Arthur?",
+            "options": ["Geoffrey Chaucer", "John Gower", "William Langland", "Thomas Malory"],
+            "correct": 3
+        },
+        {
+            "question": "Which of the following is NOT a dream vision by Chaucer?",
+            "options": ["The Book of the Duchess", "The House of Fame", "The Parliament of Fowls", "The Legend of Good Women"],
+            "correct": 3
+        },
+        {
+            "question": "Which of the following best describes Chaucer’s contribution to English literature?",
+            "options": ["He introduced the sonnet form", "He popularized the use of Middle English in poetry", "He wrote the first English epic", "He translated the Bible into English"],
+            "correct": 1
+        }
+    ]
+}
