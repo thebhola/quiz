@@ -1,0 +1,14 @@
+{
+    "questions": [
+        {
+            "question": "Who wrote The Iliad?",
+            "options": ["Homer", "Virgil", "Sophocles", "Aristotle"],
+            "correct": 0
+        },
+        {
+            "question": "What is the main theme of The Odyssey?",
+            "options": ["War", "Love", "Homecoming", "Revenge"],
+            "correct": 2
+        }
+    ]
+}

@@ -4,21 +4,90 @@
     <meta charset="UTF-8">
     <title>Select an Author</title>
     <link rel="stylesheet" href="assets/style.css">
+    <style>
+        body {
+            background: linear-gradient(135deg, #74ebd5, #ACB6E5);
+            font-family: Arial, sans-serif;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            margin: 0;
+            padding: 0;
+            overflow: hidden;
+        }
+
+        h1 {
+            color: white;
+            margin-bottom: 30px;
+            font-size: 28px;
+            text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+        }
+
+        .authors {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr)); /* Responsive full-width grid */
+            gap: 30px;
+            width: 90%;
+            max-width: 1200px; /* Limits excessive stretching on large screens */
+            justify-content: center;
+        }
+
+        .author-box {
+            background: white;
+            border-radius: 12px;
+            padding: 15px;
+            text-align: center;
+            cursor: pointer;
+            transition: transform 0.3s ease, box-shadow 0.3s ease, background 0.3s ease;
+        }
+
+        .author-box:hover {
+            transform: scale(1.05);
+            box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+            background: #f1f1f1; /* Subtle background change */
+        }
+
+        .author-box img {
+            width: 100%;
+            height: 200px; /* Increased height */
+            border-radius: 12px;
+            object-fit: cover;
+        }
+
+        .author-box p {
+            margin-top: 12px;
+            font-size: 18px;
+            font-weight: bold;
+            color: #333;
+        }
+    </style>
 </head>
 <body>
-    <div class="author-container">
-        <h1>Select an Author</h1>
-        <div class="authors">
-            <button onclick="startQuiz('Homer')">Homer</button>
-            <button onclick="startQuiz('Shakespeare')">Shakespeare</button>
-            <button onclick="startQuiz('Jane_Austen')">Jane Austen</button>
-            <button onclick="startQuiz('T.S_Eliot')">T.S. Eliot</button>
+    <h1>Select an Author</h1>
+    <div class="authors">
+        <div class="author-box" onclick="startQuiz('Homer')">
+            <img src="assets/authors/chaucer.jpeg" alt="Homer">
+            <p>Homer</p>
+        </div>
+        <div class="author-box" onclick="startQuiz('Shakespeare')">
+            <img src="assets/authors/chaucer.jpeg" alt="Shakespeare">
+            <p>Shakespeare</p>
+        </div>
+        <div class="author-box" onclick="startQuiz('Jane_Austen')">
+            <img src="assets/authors/chaucer.jpeg" alt="Jane Austen">
+            <p>Jane Austen</p>
+        </div>
+        <div class="author-box" onclick="startQuiz('T.S_Eliot')">
+            <img src="assets/authors/chaucer.jpeg" alt="T.S. Eliot">
+            <p>T.S. Eliot</p>
         </div>
     </div>
 
     <script>
         function startQuiz(author) {
-            window.location.href = `quiz.html?author=${author}`;
+            window.location.href = `test.html?author=${author}`;
         }
     </script>
 </body>
